@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,700;1,400&display=swap");
+
+body {
+  background-color: #34495e;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Dancing Script", cursive;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.js-clock h1 {
+  font-size: 8rem;
+  margin-top: 320px;
+  margin-bottom: 50px;
+}
+
+input {
+  border: none;
+  font-size: 3rem;
+  background-color: inherit;
+  text-align: center;
+  font-family: "Bitter", serif;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+.js-greetings {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.js-toDoList {
+  padding: 0;
+}
+
+.js-toDoList li {
+  font-size: 2rem;
+  font-family: "Bitter", serif;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.js-toDoList button {
+  background-color: inherit;
+  border: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.js-toDoList li:hover button {
+  opacity: 1;
+}
+
+.js-toDoList li:hover {
+  transform: translateY(-5px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.

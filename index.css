@@ -41,7 +41,7 @@ body {
 
 .js-clock h1 {
   font-size: 8rem;
-  margin-top: 320px;
+  margin-top: 15rem;
   margin-bottom: 50px;
 }
 
@@ -81,7 +81,7 @@ input:focus {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 .js-toDoList button {
@@ -100,4 +100,15 @@ input:focus {
   transition: transform 0.5s ease-in-out;
 }
 
-.
+.js-toDoList {
+  display: flex;
+}
+
+#js-pending,
+#js-finished {
+  padding: 0;
+}
+
+#js-pending {
+  margin-right: 20px;
+}
